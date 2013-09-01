@@ -1,5 +1,7 @@
 <?php get_header(); ?>
 
+    <div class="main">
+
     <?php
 
         if ( have_posts() ) :
@@ -11,12 +13,6 @@
                 ?>
 
                     <div <?php post_class(); ?>>
-
-                        <?php if ( has_post_thumbnail() ) : ?>
-                        <a href="<?php the_permalink(); ?>" class="post-thumb">
-                            <?php the_post_thumbnail(); ?>
-                        </a>
-                        <?php endif; ?>
 
                         <h2><a href="<?php the_permalink(); ?>">
                             <?php the_title(); ?></a></h2>
@@ -41,6 +37,8 @@
 
         endif;
     ?>
+
+    </div>
 
 <?php get_sidebar(); ?>
 

@@ -1,5 +1,7 @@
 <?php get_header(); ?>
 
+	<div class="main">
+
     <?php
 
         if ( have_posts() ) :
@@ -34,6 +36,8 @@
 
         endif;
     ?>
+
+	</div>
 
 <?php get_sidebar(); ?>
 
